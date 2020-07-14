@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title>Assignment1</title>
+</head>
+<body>
+    <script>
+        var today = new Date();
+        var weekday = new Array(7);
+        weekday[0] = "Sunday";
+        weekday[1] = "Monday";
+        weekday[2] = "Tuesday";
+        weekday[3] = "Wednesday";
+        weekday[4] = "Thursday";
+        weekday[5] = "Friday";
+        weekday[6] = "Saturday";
+        var hours = today.getHours() > 12 ? today.getHours() - 12 : today.getHours();
+        var am_pm = today.getHours() >= 12 ? "PM" : "AM";
+        hours = hours < 10 ? "0" + hours : hours;
+        var minutes = today.getMinutes() < 10 ? "0" + today.getMinutes() : today.getMinutes();
+        var seconds = today.getSeconds() < 10 ? "0" + today.getSeconds() : today.getSeconds();
+        time = hours +" "+am_pm;
+        document.writeln("Today date : "+weekday[today.getDay()]);document.write("<br />");
+        document.writeln("Current time is : "+time+" : "+today.getMinutes()+" : "+today.getSeconds());
+    </script>
+    </body>
+</html>
