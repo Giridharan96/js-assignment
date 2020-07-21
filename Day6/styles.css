@@ -1,0 +1,13 @@
+.blue{
+    color:blue;
+}
+
+.bgYellow{
+    background-color: yellow;
+}
+
+.highlight{
+    font-size: 22px;
+    color: red;
+}
+.buttonStyle{ position: relative }
